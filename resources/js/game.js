@@ -6,7 +6,7 @@ $(document).ready(function() {
        ========================================================================== */
 
     // parent-scoped variables
-    let gemArray = [];
+    let gemArray;
     let playerScore = 0;
     let playerWins = 0;
     let playerLosses = 0;
@@ -70,6 +70,8 @@ $(document).ready(function() {
             $('#magicNumber p').css('color', 'red');
         }
     
+        // initialize array as empty
+        gemArray = [];
         // generate random number for gems and populate gemArray (4 gems)
         for (let g = 0; g < 4; g++) {
             gemArray.push(randGem());
@@ -122,7 +124,7 @@ $(document).ready(function() {
     }
 
     // click events for score updates, calls scoreUpdate function to update score
-    
+
     $('#redGem').on('click', function (){
         // play sound after score update
         gemClick.play();
