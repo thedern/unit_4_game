@@ -63,7 +63,13 @@ body {
   font-size: 2em;
 }
 
-#redGem:hover, #purpleGem:hover, #goldGem:hover {
+#gems a {
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#redGem:hover, #purpleGem:hover, #goldGem:hover, #pinkGem:hover {
     transform: scale(1.05);
     cursor: pointer;
 }

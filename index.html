@@ -31,44 +31,62 @@
       </div>
     </header>
 
+    <!-- target number and gameplay setion -->
     <main>
+
+      <!-- target (magic) number section -->
       <div class="container mt-3 mb-3">
         <div class="row">
-          <div id="magicNumber" class="col-md-4 p-3">
+          <div id="magicNumber" class="col-md-4 p-3 text-center">
+            <!-- magic number populated via jquery -->
           </div>
+
+          <!-- gameplay summary section -->
           <div id="magicImage" class="col-md-4 p-5 text-center">
               <img id="magicImageGem" src="./resources/img/bluegem.png" alt="blue gem" class="img-fluid">
               <h1>Gem Game</h1>
               <p>Try to match the magic number!</p>
           </div>
+
+          <!-- gameplay section -->
           <div id="userScore" class="col-md-4 p-3">Tally and Score
             <hr>
+            <!-- paragraphs below altered/extended via jquery -->
             <p id="playerWins"></p>
             <p id="playerLosses"></p>
             <hr>
             <br>
             <p>Round Score: <span id="currentScore"></span></p>
           </div>
+
         </div>
+        <!-- end row -->
       </div>
+      <!-- end container -->
     </main>
 
+    <!-- gem section -->
     <section>
       <div class="container mb-5">
         <div class="row">
           <div id ="gems" class="col-md-12 mb-5 p-3 text-center"><h1>Click the Gems to Reveal Your Points.  Match the 'Magic Number' if You Can!</h1>
+            <!-- clickable image links; padding adjusted as needed to line up gems-->
             <img id="redGem" class="pb-3" src="./resources/img/redgem.png" alt="red gem">
             <img id="purpleGem" class="pb-3" src="./resources/img/purplegem.png" alt="purple gem">
             <img id="goldGem" class="pb-5" src="./resources/img/goldgem.png" alt="gold gem">
+            <img id="pinkGem" class="pt-2 pb-3" src="./resources/img/pinkgem.png" alt="pink gem">
+            <a class="text-center" href="https://pngtree.com/">Graphics from pngtree.com</a>
           </div>
         </div>
+        <!-- end row -->
       </div>
+       <!-- end container -->
     </section>
 
     
     <section>
       <div class="row">
-          <!-- empty spacer to create visual space between the gems container and footer -->
+          <!-- empty spacer row to create visual space between the gems container and footer -->
       </div>
     </section>
   
